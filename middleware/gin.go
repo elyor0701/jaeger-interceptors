@@ -2,11 +2,11 @@ package middleware
 
 import (
 	"fmt"
+	"github.com/elyor0701/jaeger-interceptors/config"
 	"github.com/gin-gonic/gin"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
-	"jaeger-interceptors/config"
 	"net/http"
 )
 

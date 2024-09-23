@@ -2,6 +2,8 @@ package interceptor
 
 import (
 	"context"
+	"github.com/elyor0701/jaeger-interceptors/config"
+	"github.com/elyor0701/jaeger-interceptors/models"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	otelCodes "go.opentelemetry.io/otel/codes"
@@ -9,8 +11,6 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
-	"jaeger-interceptors/config"
-	"jaeger-interceptors/models"
 )
 
 func TracingServerInterceptor() grpc.UnaryServerInterceptor {

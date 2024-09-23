@@ -2,12 +2,12 @@ package interceptor
 
 import (
 	"context"
+	"github.com/elyor0701/jaeger-interceptors/config"
+	"github.com/elyor0701/jaeger-interceptors/models"
 	"go.opentelemetry.io/otel"
 	otelCodes "go.opentelemetry.io/otel/codes"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
-	"jaeger-interceptors/config"
-	"jaeger-interceptors/models"
 	"log"
 )
 
