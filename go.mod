@@ -1,4 +1,4 @@
-module jaeger-interceptors
+module github.com/yourusername/jaeger-interceptors
 
 go 1.23.0
 
