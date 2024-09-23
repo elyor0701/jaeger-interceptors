@@ -3,6 +3,7 @@ package jaeger
 import (
 	"context"
 	"fmt"
+	"github.com/elyor0701/jaeger-interceptors/config"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
@@ -10,7 +11,6 @@ import (
 	"go.opentelemetry.io/otel/sdk/resource"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.20.0"
-	"jaeger-interceptors/config"
 	"log"
 	"time"
 )
